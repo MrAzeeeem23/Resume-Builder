@@ -1,14 +1,11 @@
 import { GoogleGenAI } from "@google/genai";
 
-// Initialize Gemini
 const genAi = new GoogleGenAI({
-  apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY || "", // ⛔ Avoid hardcoding keys
+  apiKey: process.env.NEXT_PUBLIC_GOOGLE_GENERATIVE_AI_API_KEY || "", // ⛔ Avoid hardcoding keys
 });
 
-console.log( process.env.GOOGLE_GENERATIVE_AI_API_KEY)
 
 /**
- * Generates a resume using Gemini from raw user input.
  * @param {object} message - Raw user data (JSON) from the form.
  * @returns {Promise<object>} - Parsed JSON resume object.
  */
@@ -100,7 +97,7 @@ ${JSON.stringify(message, null, 2)}`;
     return parsed;
   } catch (error) {
     console.error("AI Resume Error:", error.message);
-    throw new Error("❌ Failed to generate resume using AI.");
+    throw new Error("Failed to generate resume using AI.");
   }
 };
 
