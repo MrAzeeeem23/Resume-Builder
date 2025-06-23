@@ -1,10 +1,10 @@
 # Resume Builder
 
-Resume Builder is a modern web application that empowers users to generate professional, ATS-friendly resumes in seconds using advanced AI (Google Gemini). Designed with simplicity and accessibility in mind, it allows you to input your information, leverages AI to optimize your content, and provides instant download of a polished PDF resume.
+Resume Builder is a modern web application that empowers users to generate professional, ATS-friendly resumes in seconds using advanced AI. Designed with simplicity and accessibility in mind, it allows you to input your information, leverages AI to optimize your content, and provides instant download of a polished PDF resume.
 
 ## ✨ Features
 
-- **AI-Powered Resume Generation**: Uses Google's Gemini AI to analyze your details and create a professional resume tailored for you.
+- **AI-Powered Resume Generation**: Uses AI to analyze your details and create a professional resume tailored for you.
 - **ATS-Friendly Format**: Output is optimized to pass Applicant Tracking Systems, increasing your chances with employers.
 - **Modern UI**: Built with Next.js and React, featuring a clean, responsive interface.
 - **Easy PDF Download**: Instantly download your resume in PDF format.
@@ -35,13 +35,7 @@ Resume Builder is a modern web application that empowers users to generate profe
    pnpm install
    ```
 
-3. **Set up API Key:**
-   - Obtain a Google Generative AI (Gemini) API key and set it as an environment variable:
-     ```
-     GOOGLE_GENERATIVE_AI_API_KEY=your_key_here
-     ```
-
-4. **Run the development server:**
+3. **Run the development server:**
    ```bash
    npm run dev
    # or
@@ -50,7 +44,7 @@ Resume Builder is a modern web application that empowers users to generate profe
    pnpm dev
    ```
 
-5. **Open your browser:**
+4. **Open your browser:**
    - Visit [http://localhost:3000](http://localhost:3000)
 
 ## 🛠️ Usage
@@ -62,7 +56,7 @@ Resume Builder is a modern web application that empowers users to generate profe
 
 ## 🧠 How It Works
 
-- Your input is processed by Gemini AI, which generates professional, quantified resume content and ensures optimal formatting.
+- Your input is processed by AI, which generates professional, quantified resume content and ensures optimal formatting.
 - No sensitive data is stored; everything runs securely in the session.
 - The result is a JSON-structured resume that is rendered and offered as a downloadable PDF.
 
